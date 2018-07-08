@@ -1,1 +1,33 @@
 /* Styles for Single Level Menu */
+
+/*just adding flex display nature to a media query is enough to make the mobile-first
+vertical manu switch to horizontal menu on wider screens!*/
+
+/*
+So now we have menu items equidistantly spaced and there's no gaps in between them. It's really neat and really simple.
+Now there's just one more thing. If you now go back and try to change justify-content to either center or flex-start or
+flex-end, nothing will happen. That's because this new property we added for each of the list items: flex: 1 0 auto, is
+ensuring that the flex items are automatically filling out the space so we can't align them to the left or right or
+center anymore. So if you want to do center, left, or right, we just leave this line out and it will align properly.
+
+If you set it to space-between or space-around, you'll leave this property in and then everything will align the way you
+want it to. See? I told you, this is way easier than what you've done before.
+*/
+
+@media screen and (min-width:30em){
+    .single-nav ul{
+        display:flex;
+        flex-wrap: wrap;
+        /* center is centering without any spacing */
+        /*justify-content: center;*/
+        /* space-around is like a justified center spacing */
+        /*justify-content: space-around;*/
+        /* space-between is like space-around but ignores outside Left and Right or ::first and ::last space */
+        justify-content: space-between;
+    }
+
+    .single-nav li{
+        flex: 1 0;
+        text-align: center;
+    }
+}
