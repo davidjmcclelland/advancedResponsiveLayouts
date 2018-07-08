@@ -15,7 +15,7 @@ want it to. See? I told you, this is way easier than what you've done before.
 */
 
 /*@media screen and (min-width:30em){*/
-    .single-nav ul{
+    .single-nav{
         display:flex;
         flex-wrap: wrap;
         /* center is centering without any spacing */
