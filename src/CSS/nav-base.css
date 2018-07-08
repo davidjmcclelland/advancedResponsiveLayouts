@@ -2,7 +2,7 @@
 .menu-section {
 	padding-bottom: 2em;
 	margin-bottom: 2em;
-	border-bottom: 1px solid hsl(0, 0%, );
+	border-bottom: 1px solid hsl(0, 0%, 10% );
 }
 
 .menu {
