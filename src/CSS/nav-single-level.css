@@ -14,8 +14,8 @@ If you set it to space-between or space-around, you'll leave this property in an
 want it to. See? I told you, this is way easier than what you've done before.
 */
 
-@media screen and (min-width:30em){
-    .single-nav ul{
+/*@media screen and (min-width:30em){*/
+    .single-nav div{
         display:flex;
         flex-wrap: wrap;
         /* center is centering without any spacing */
@@ -26,8 +26,9 @@ want it to. See? I told you, this is way easier than what you've done before.
         justify-content: space-between;
     }
 
-    .single-nav li{
+    .single-nav div{
         flex: 1 0;
         text-align: center;
     }
-}
+/*
+}*/
